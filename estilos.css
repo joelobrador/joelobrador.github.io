@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@700&family=Roboto:ital@1&display=swap');
+    *¨{
+        box-sizing: border-box;
+    }
+    body{
+       
+        font-family: 'Roboto', sans-serif;
+    }
+    header{
+        background-color:purple;
+        padding: 30px;
+        text-align: center;
+        font-size: 35px;
+        color: rgb(248, 223, 0);
+        font-family: 'Gemunu Libre', sans-serif;
+    }
+    section{
+        display:flex;
+    }
+    nav{
+        float: left;
+        width: 26%;
+        
+        background-color:rgb(255, 203, 107) ;
+        padding: 2%;
+       
+    }
+    nav ul{
+        list-style-type: none;
+        padding: 0%;
+    }
+    article{
+        float: left;
+        padding: 2%;
+        width: 66%;
+        background-color: rgb(255, 208, 0);
+       
+    }
+    section::after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+    footer{
+        background-color:purple;
+        padding: 10px;
+        text-align: center;
+        color:rgb(199, 199, 9);
+    }
+
+    @media only screen and (max-width: 620px)
+    {
+        article, nav{
+            width: 100%;
+
+        }
+        section {
+            display: block;
+        }
+        
+    } 
+    
+
