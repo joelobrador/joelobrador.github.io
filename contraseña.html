@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        function saludar() {
+            usuario = document.getElementById("inputusuario").value;
+            password = document.getElementById("inputpassword").value;
+            if (usuario == "joel" && password == "pikachu") {
+                alert("bienvenido,campeón");
+                
+                window.location.href = "https://www.roblox.com/home"
+        }
+        else {
+            alert("credenciales no validas")
+        }
+    }   
+       
+    </script>
+</head>
+<body>
+    <form action="">
+        <label for="">Usuario</label>
+        <input type="text" name="usuario" id="inputusuario"> <br>
+        
+        <label for="">Contraseña</label>
+        <input type="text" name="contraseña" id="inputpassword"> <br>
+        <button type="button" onclick="saludar()">Entrar</button>
+    </form>
+   
+
+</body>
+</html>
